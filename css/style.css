@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: slategrey;
+}
+
+.container {
+    border: 2px solid wheat;
+    height: 804px;
+    width: 804px;
+    margin: 2rem auto;
+    position: relative;
+}
+
+.box {
+    border: 1px solid wheat;
+    height: 200px;
+    width: 200px;
+    border-radius: 5%;
+    position: absolute;
+    left: 18; 
+    top: 30;
+    animation: runningBox;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+/*@keyframes runningBox {
+    0% {left: 0; top: 0;}
+    25% {left: 600px; top: 0;}
+    50% {left: 600px; top: 600px;}
+    75% {left: 0px; top: 600px}
+    100% {left: 0px; top: 0px;}
+}*/
+
+@keyframes runningBox {
+    0% {left: 18; top: 30;}
+    10% {left: 30px; top: 45px;}
+    25% {left: 35px; top: 50px;}
+    35% {left: 25px; top: 49px;}
+    45% {left: 15px; top: 35px;}
+    55% {left: 10px; top: 29px;}
+    65% {left: 8px; top: 25px;}
+    75% {left: 10px; top: 21px;}
+    85% {left: 14px; top: 23px;}
+    95% {left: 17px; top: 28px;}
+    100% {left: 20px; top: 33px;}
+}
+
+
+
+.mountain {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+}
+
+.cloud-one {
+    width: 232px;
+    position: absolute;
+    animation-name: CloudOne;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes CloudOne {
+    0% {left: 32; top: 32;}
+    10% {left: 64; top: 64;}
+    20% {left: 96; top: 96;}
+    30% {left: 0; top: 0;}
+    40% {left: 0; top: 0;}
+    100% {left: 255; top: 255;}
+}
+
+.cloud-two {
+    width: 351px;
+    position: absolute;
+}
