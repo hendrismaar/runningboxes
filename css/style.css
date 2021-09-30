@@ -63,20 +63,47 @@ body {
     width: 232px;
     position: absolute;
     animation-name: CloudOne;
-    animation-duration: 10s;
+    animation-duration: 120s;
     animation-iteration-count: infinite;
+    left: -30px;
+    top: 300px;
 }
 
 @keyframes CloudOne {
-    0% {left: 32; top: 32;}
-    10% {left: 64; top: 64;}
-    20% {left: 96; top: 96;}
-    30% {left: 0; top: 0;}
-    40% {left: 0; top: 0;}
-    100% {left: 255; top: 255;}
+    0% {left: -30px; top: 300px;}
+    10% {left: 42px; top: 315px;}
+    20% {left: 114px; top: 300px;}
+    30% {left: 186px; top: 285px;}
+    40% {left: 258px; top: 300px;}
+    50% {left: 330px; top: 315px;}
+    60% {left: 402px; top: 300px;}
+    70% {left: 474px; top: 285px;}
+    80% {left: 546px; top: 300px;}
+    90% {left: 618px; top: 315px;}
+    100% {left:690px; top: 300px;}
+    
 }
 
 .cloud-two {
     width: 351px;
     position: absolute;
+    animation-name: CloudTwo;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    left: -20px;
+    top: 400px
+}
+
+@keyframes CloudTwo {
+    0% {left: -20px; top: 400px;}
+    10% {left: 40px; top: 405px;}
+    20% {left: 100px; top: 400px;}
+    30% {left: 160px; top: 395px;}
+    40% {left: 220px; top: 400px;}
+    50% {left: 280px; top: 405px;}
+    60% {left: 340px; top: 400px;}
+    70% {left: 400px; top: 395px;}
+    80% {left: 460px; top: 400px;}
+    90% {left: 520px; top: 405px;}
+    100% {left: 580px; top: 400px;}
 }
